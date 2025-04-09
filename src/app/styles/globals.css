@@ -1,0 +1,85 @@
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  background-color: #000;
+  margin: 0px;
+  padding: 0px;
+  width: 100dvw;
+  height: 100dvh;
+  font-size: 16pt;
+}
+
+.background {
+  position: absolute;
+  inset: 0px;
+}
+.background div {
+  position: absolute;
+  inset: 0px;
+}
+.backgroundBase {
+  background-color: #000;
+}
+.backgroundImage {
+  background: url("/assets/background/background.jpg") fixed no-repeat center / cover;
+  filter: blur(5px);
+}
+.backgroundTint {
+  background-color: #000;
+  opacity: 0.5;
+}
+.backgroundInsetShadow {
+  /*                        blur spread */
+  box-shadow: inset 0px 0px 20px 10px #000;
+}
+.backgroundGrain {
+  background: url("/assets/background/noise.png") fixed repeat center;
+  opacity: 0.08;
+}
+
+.layout {
+  display: flex;
+  position: relative;
+  inset: 0px;
+  height: 100dvh;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-gutter: stable both-edges;
+  scroll-behavior: smooth;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Dot: */
+.dot {
+  background-color: #fff;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  flex: 0 0 auto;
+  opacity: 0.6;
+}
+
+/* Hide scrollbar: */
+::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+}
