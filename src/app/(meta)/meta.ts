@@ -50,17 +50,17 @@ export function getFooterSocials(): Social[] {
   return [
     {
       name: "LinkedIn",
-      iconSrc: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/icons/linkedin.svg`,
+      iconSrc: `/assets/icons/linkedin.svg`,
       href: "https://linkedin.com/in/branbarh"
     },
     {
       name: "Email",
-      iconSrc: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/icons/gmail.svg`,
+      iconSrc: `/assets/icons/gmail.svg`,
       href: "mailto:branbarh@umich.edu"
     },
     {
       name: "GitHub",
-      iconSrc: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/icons/github.svg`,
+      iconSrc: `/assets/icons/github.svg`,
       href: "https://github.com/branbarh"
     }
   ];
@@ -71,17 +71,17 @@ export function getConnectSocials(): Social[] {
   return [
     {
       name: "Brandon on LinkedIn",
-      iconSrc: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/icons/linkedin.svg`,
+      iconSrc: `/assets/icons/linkedin.svg`,
       href: "https://linkedin.com/in/branbarh"
     },
     {
       name: "branbarh@umich.edu",
-      iconSrc: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/icons/gmail.svg`,
+      iconSrc: `/assets/icons/gmail.svg`,
       href: "mailto:branbarh@umich.edu"
     },
     {
       name: "+1 (586) 599 - 9501",
-      iconSrc: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/icons/phone.svg`,
+      iconSrc: `/assets/icons/phone.svg`,
       href: "tel:+15865999501"
     }
   ];

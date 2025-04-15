@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Brandon | Portfolio",
   description: "The personal portfolio website for Brandon Barham.",
   icons: {
-    icon: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/favicon.ico`
+    icon: `/assets/favicon.ico`
   }
 };
 
