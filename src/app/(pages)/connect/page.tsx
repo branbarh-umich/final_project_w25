@@ -41,7 +41,7 @@ export default function Connect() {
                   {social.name}
                   <Image
                     className={styles.connectSocialExternal}
-                    src="/assets/icons/external.svg"
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/assets/icons/external.svg`}
                     alt="External Link"
                     width={24}
                     height={24}

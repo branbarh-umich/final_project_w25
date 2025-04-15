@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 
+// Thanks to https://www.reddit.com/r/nextjs/comments/1ixfypv/nextjs_on_github_pages/
 const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {

@@ -20,7 +20,7 @@ function PaneSection({ name, href, fragmentID, active }: SectionProps) {
           {name}{" "}
           {href ? (
             <Image
-              src="/assets/icons/external.svg"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/assets/icons/external.svg`}
               alt="External Link"
               width={14}
               height={14}
@@ -116,7 +116,7 @@ function PaneHeader({ value, fragmentID }: HeaderData) {
       <div className={styles.paneHeaderFragmentLink}>
         <a href={`#${fragmentID}`}>
           <Image
-            src="/assets/icons/link.svg"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/assets/icons/link.svg`}
             alt="Link"
             width={25}
             height={25}
@@ -140,7 +140,7 @@ function PanePhotoHeader({ value, fragmentID, photo }: PhotoHeaderData) {
         <div className={styles.paneHeaderFragmentLink}>
           <a href={`#${fragmentID}`}>
             <Image
-              src="/assets/icons/link.svg"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/assets/icons/link.svg`}
               alt="Link"
               width={25}
               height={25}
