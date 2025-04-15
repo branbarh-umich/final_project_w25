@@ -12,12 +12,15 @@ import { Background, Content } from "@/(components)/content";
 // Meta imports:
 import { getPages } from "@/(meta)/meta";
 
+// Config import:
+import config from "../../next.config.mjs";
+
 // Website metadata:
 export const metadata: Metadata = {
   title: "Brandon | Portfolio",
   description: "The personal portfolio website for Brandon Barham.",
   icons: {
-    icon: `/assets/favicon.ico`
+    icon: `${config.basePath}/assets/favicon.ico`
   }
 };
 

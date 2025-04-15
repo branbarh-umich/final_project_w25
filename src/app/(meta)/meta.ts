@@ -1,5 +1,8 @@
 import { type PageMeta, type Page, type Social, type SectionGroup, type Content } from "@/(meta)/types";
 
+// Config import:
+import config from "../../../next.config.mjs";
+
 export function getPages(): PageMeta {
   // Get the list of page names and routes:
   // [TODO] Hard-coded for now until MongoDB is setup:
@@ -50,17 +53,17 @@ export function getFooterSocials(): Social[] {
   return [
     {
       name: "LinkedIn",
-      iconSrc: `/assets/icons/linkedin.svg`,
+      iconSrc: `${config.basePath}/assets/icons/linkedin.svg`,
       href: "https://linkedin.com/in/branbarh"
     },
     {
       name: "Email",
-      iconSrc: `/assets/icons/gmail.svg`,
+      iconSrc: `${config.basePath}/assets/icons/gmail.svg`,
       href: "mailto:branbarh@umich.edu"
     },
     {
       name: "GitHub",
-      iconSrc: `/assets/icons/github.svg`,
+      iconSrc: `${config.basePath}/assets/icons/github.svg`,
       href: "https://github.com/branbarh"
     }
   ];
@@ -71,17 +74,17 @@ export function getConnectSocials(): Social[] {
   return [
     {
       name: "Brandon on LinkedIn",
-      iconSrc: `/assets/icons/linkedin.svg`,
+      iconSrc: `${config.basePath}/assets/icons/linkedin.svg`,
       href: "https://linkedin.com/in/branbarh"
     },
     {
       name: "branbarh@umich.edu",
-      iconSrc: `/assets/icons/gmail.svg`,
+      iconSrc: `${config.basePath}/assets/icons/gmail.svg`,
       href: "mailto:branbarh@umich.edu"
     },
     {
       name: "+1 (586) 599 - 9501",
-      iconSrc: `/assets/icons/phone.svg`,
+      iconSrc: `${config.basePath}/assets/icons/phone.svg`,
       href: "tel:+15865999501"
     }
   ];

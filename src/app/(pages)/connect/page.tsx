@@ -7,6 +7,9 @@ import styles from "@/styles/connect.module.css";
 
 import Image from "next/image";
 
+// Config import:
+import config from "../../../../next.config.mjs";
+
 export default function Connect() {
   return (
     <>
@@ -41,7 +44,7 @@ export default function Connect() {
                   {social.name}
                   <Image
                     className={styles.connectSocialExternal}
-                    src={`/assets/icons/external.svg`}
+                    src={`${config.basePath}/assets/icons/external.svg`}
                     alt="External Link"
                     width={24}
                     height={24}

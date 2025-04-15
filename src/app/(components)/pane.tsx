@@ -8,6 +8,9 @@ import componentStyles from "@/styles/components.module.css";
 import { type PaneProps, type HeaderData, type PhotoHeaderData, type PhotoGroupData, type TextData, type BulletData, type SpacerData, type SectionGroup, type SectionProps } from "@/(meta)/types";
 import useFragmentID from "@/(hooks)/fragmentID";
 
+// Config import:
+import config from "../../../next.config.mjs";
+
 function PaneSection({ name, href, fragmentID, active }: SectionProps) {
   return (
     <div className={`${styles.paneSection} ${active ? styles.active : ""}`}>
@@ -20,7 +23,7 @@ function PaneSection({ name, href, fragmentID, active }: SectionProps) {
           {name}{" "}
           {href ? (
             <Image
-              src={`/assets/icons/external.svg`}
+              src={`${config.basePath}/assets/icons/external.svg`}
               alt="External Link"
               width={14}
               height={14}
@@ -116,7 +119,7 @@ function PaneHeader({ value, fragmentID }: HeaderData) {
       <div className={styles.paneHeaderFragmentLink}>
         <a href={`#${fragmentID}`}>
           <Image
-            src={`/assets/icons/link.svg`}
+            src={`${config.basePath}/assets/icons/link.svg`}
             alt="Link"
             width={25}
             height={25}
@@ -140,7 +143,7 @@ function PanePhotoHeader({ value, fragmentID, photo }: PhotoHeaderData) {
         <div className={styles.paneHeaderFragmentLink}>
           <a href={`#${fragmentID}`}>
             <Image
-              src={`/assets/icons/link.svg`}
+              src={`${config.basePath}/assets/icons/link.svg`}
               alt="Link"
               width={25}
               height={25}

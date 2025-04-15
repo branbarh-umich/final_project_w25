@@ -4,14 +4,23 @@ import { PropsWithChildren } from "react";
 import { MotionWrapper, MotionDiv, FrozenRouter } from "@/(components)/motion";
 import { usePathname } from "next/navigation";
 
+// Config import:
+import config from "../../../next.config.mjs";
+
 export function Background() {
   return (
     <div className="background">
       <div className="backgroundBase"></div>
-      <div className="backgroundImage"></div>
+      <div
+        className="backgroundImage"
+        style={{ backgroundImage: `url("${config.basePath}/assets/background/background.jpg")` }}
+      ></div>
       <div className="backgroundTint"></div>
       <div className="backgroundInsetShadow"></div>
-      <div className="backgroundGrain"></div>
+      <div
+        className="backgroundGrain"
+        style={{ backgroundImage: `url("${config.basePath}/assets/background/noise.png")` }}
+      ></div>
     </div>
   );
 }
