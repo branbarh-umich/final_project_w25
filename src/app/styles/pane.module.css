@@ -92,6 +92,7 @@
 /* Pane content styles: */
 .paneContent {
   display: flex;
+  min-width: 0px;
   backdrop-filter: blur(10px) opacity(var(--opacity));
   border-radius: 0px 10px 10px 0px;
   flex: 1 1 auto;
