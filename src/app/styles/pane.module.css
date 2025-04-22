@@ -92,7 +92,7 @@
 /* Pane content styles: */
 .paneContent {
   display: flex;
-  min-width: 0px;
+  width: 100%;
   backdrop-filter: blur(10px) opacity(var(--opacity));
   border-radius: 0px 10px 10px 0px;
   flex: 1 1 auto;
@@ -111,7 +111,7 @@
   overflow: hidden;
 }
 .paneContentScrollProgress {
-  width: calc(90vw - 280px);
+  width: 100%;
   height: 5px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(70, 85, 75, var(--opacity)) 75px, rgba(70, 85, 75, var(--opacity)) calc(100% - 75px), rgba(0, 0, 0, 0));
 }
@@ -236,7 +236,6 @@
     border-radius: 0px 0px 10px 10px;
   }
   .paneContentScrollProgress {
-    width: 90vw;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(70, 85, 75, var(--opacity)) calc(8vw + 10px), rgba(70, 85, 75, var(--opacity)) calc(100% - (8vw + 10px)), rgba(0, 0, 0, 0));
   }
   .paneContentItemContainer {
@@ -259,9 +258,6 @@
   }
   .paneContent {
     border-radius: 0px;
-  }
-  .paneContentScrollProgress {
-    width: 100vw;
   }
   .panePhoto {
     width: 100%;
