@@ -142,7 +142,8 @@
   transition: 0.25s opacity;
 }
 .panePhotoHeader:hover .paneHeaderFragmentLink a,
-.paneHeaderContainer:hover .paneHeaderFragmentLink a {
+.paneHeaderContainer:hover .paneHeaderFragmentLink a,
+.paneHeaderFragmentLink a:focus {
   opacity: 1;
 }
 .paneHeaderFragmentLink img {
