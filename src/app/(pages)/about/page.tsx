@@ -3,11 +3,14 @@ import { getSectionGroups, getContent } from "@/(meta)/meta";
 
 export default function About() {
   return (
-    <div className="content">
+    <main
+      className="content"
+      id="main"
+    >
       <Pane
         sectionGroups={getSectionGroups("about")}
         content={getContent("about")}
       ></Pane>
-    </div>
+    </main>
   );
 }

@@ -13,7 +13,10 @@ import config from "../../../../next.config.mjs";
 export default function Connect() {
   return (
     <>
-      <div className={`${styles.contentConnect} content`}>
+      <main
+        className={`${styles.contentConnect} content`}
+        id="main"
+      >
         <LargeText
           spacer={false}
           letterSpacing={false}
@@ -36,7 +39,7 @@ export default function Connect() {
                 <Image
                   className={styles.connectSocialIcon}
                   src={social.iconSrc}
-                  alt={social.name}
+                  alt={`Connect via ${social.name}`}
                   width={48}
                   height={48}
                 />
@@ -54,7 +57,7 @@ export default function Connect() {
             );
           })}
         </div>
-      </div>
+      </main>
       <Footer toRenderSocials={false} />
     </>
   );

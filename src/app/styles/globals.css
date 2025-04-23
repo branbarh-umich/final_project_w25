@@ -53,6 +53,31 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Skip to main button: */
+.skipToMain {
+  display: block;
+  position: absolute;
+  background-color: rgba(85, 85, 85, 0.1);
+  backdrop-filter: blur(25px);
+  width: 220px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.5);
+  font-family: var(--font-plex-sans);
+  font-weight: 900;
+  font-size: 16pt;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  text-align: center;
+  top: -100px;
+  left: max(5vw, calc(50vw - 1000px));
+  z-index: 1000;
+  transition: 0.25s color;
+}
+.skipToMain:focus {
+  top: 21px;
+}
+
 .main {
   display: flex;
   width: 100%;
@@ -82,4 +107,11 @@ body {
 ::-webkit-scrollbar {
   display: none;
   width: 0px;
+}
+
+/* SLIM */
+@media only screen and (max-width: 800px) {
+  .skipToMain:focus {
+    top: 16px;
+  }
 }

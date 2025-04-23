@@ -36,6 +36,12 @@ export default function RootLayout({
       className={`${jetBrains.variable} ${plexSerif.variable} ${plexSans.variable}`}
     >
       <body>
+        <a
+          className="skipToMain"
+          href="#main"
+        >
+          Skip to Main Content
+        </a>
         <Background />
         <div className="layout">
           <Header pageMeta={getPages()} />

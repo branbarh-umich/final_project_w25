@@ -56,8 +56,8 @@ export type SectionGroup = {
   sections: Section[];
 };
 
-export type HeaderData = { value: string; fragmentID: string };
-export type PhotoHeaderData = { value: string; fragmentID: string; photo: PhotoData };
+export type HeaderData = { value: string; fragmentID: string; first?: boolean };
+export type PhotoHeaderData = { value: string; fragmentID: string; first?: boolean; photo: PhotoData };
 export type PhotoData = { src: string; alt: string };
 export type PhotoGroupData = { photos: PhotoData[] };
 export type TextData = { value: string };

@@ -96,7 +96,7 @@ export function getContent(page: string): Content[] {
     return [
       {
         type: "header",
-        data: { value: "Header Example", fragmentID: "header-example" }
+        data: { value: "Header Example", fragmentID: "header-example", first: true }
       },
       {
         type: "photoGroup",
@@ -130,7 +130,7 @@ export function getContent(page: string): Content[] {
     return [
       {
         type: "header",
-        data: { value: "All About Brandon", fragmentID: "all-about-brandon" }
+        data: { value: "All About Brandon", fragmentID: "all-about-brandon", first: true }
       },
       {
         type: "text",
@@ -231,7 +231,7 @@ export function getContent(page: string): Content[] {
   return [
     {
       type: "header",
-      data: { value: "Header Example", fragmentID: "header-example" }
+      data: { value: "Header Example", fragmentID: "header-example", first: true }
     },
     {
       type: "text",

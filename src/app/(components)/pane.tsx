@@ -107,15 +107,24 @@ function PaneContentScrollProgress() {
   );
 }
 
-function PaneHeader({ value, fragmentID }: HeaderData) {
+function PaneHeader({ value, fragmentID, first }: HeaderData) {
   return (
     <div className={styles.paneHeaderContainer}>
-      <div
-        className={styles.paneHeader}
-        id={fragmentID}
-      >
-        {value}
-      </div>
+      {first ? (
+        <h1
+          className={styles.paneHeader}
+          id={fragmentID}
+        >
+          {value}
+        </h1>
+      ) : (
+        <h2
+          className={styles.paneHeader}
+          id={fragmentID}
+        >
+          {value}
+        </h2>
+      )}
       <div className={styles.paneHeaderFragmentLink}>
         <a href={`#${fragmentID}`}>
           <Image
@@ -130,16 +139,25 @@ function PaneHeader({ value, fragmentID }: HeaderData) {
   );
 }
 
-function PanePhotoHeader({ value, fragmentID, photo }: PhotoHeaderData) {
+function PanePhotoHeader({ value, fragmentID, first, photo }: PhotoHeaderData) {
   return (
     <div className={styles.panePhotoHeader}>
       <div className={styles.paneHeaderContainer}>
-        <div
-          className={styles.paneHeader}
-          id={fragmentID}
-        >
-          {value}
-        </div>
+        {first ? (
+          <h1
+            className={styles.paneHeader}
+            id={fragmentID}
+          >
+            {value}
+          </h1>
+        ) : (
+          <h2
+            className={styles.paneHeader}
+            id={fragmentID}
+          >
+            {value}
+          </h2>
+        )}
         <div className={styles.paneHeaderFragmentLink}>
           <a href={`#${fragmentID}`}>
             <Image

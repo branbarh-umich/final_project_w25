@@ -15,7 +15,6 @@
 .footer {
   max-width: 100dvw;
   padding: 25px 0px;
-  overflow: hidden;
 }
 .headerLink {
   display: inline-flex;

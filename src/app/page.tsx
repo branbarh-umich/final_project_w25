@@ -3,7 +3,10 @@ import { Footer, LargeText, Typeable } from "@/(components)/components";
 export default function Home() {
   return (
     <>
-      <div className="content">
+      <main
+        className="content"
+        id="main"
+      >
         <LargeText
           spacer={true}
           letterSpacing={true}
@@ -14,7 +17,7 @@ export default function Home() {
           align="right"
           text="SOFTWARE ENGINEER"
         />
-      </div>
+      </main>
       <Footer toRenderSocials={true} />
     </>
   );

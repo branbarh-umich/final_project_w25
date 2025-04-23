@@ -3,11 +3,14 @@ import { getSectionGroups, getContent } from "@/(meta)/meta";
 
 export default function Experience() {
   return (
-    <div className="content">
+    <main
+      className="content"
+      id="main"
+    >
       <Pane
         sectionGroups={getSectionGroups("experience")}
         content={getContent("experience")}
       ></Pane>
-    </div>
+    </main>
   );
 }

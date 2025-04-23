@@ -35,7 +35,7 @@ export function Header({ pageMeta }: HeaderProps) {
   }, [pathname]);
 
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       {pageMeta.pages.map((page, i) => {
         return (
           <Fragment key={i}>
@@ -52,13 +52,13 @@ export function Header({ pageMeta }: HeaderProps) {
           </Fragment>
         );
       })}
-    </div>
+    </header>
   );
 }
 
 export function Footer({ toRenderSocials }: FooterProps) {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       {toRenderSocials ? (
         getFooterSocials().map((social, i) => {
           return (
@@ -80,7 +80,7 @@ export function Footer({ toRenderSocials }: FooterProps) {
       ) : (
         <></>
       )}
-    </div>
+    </footer>
   );
 }
 
@@ -163,8 +163,8 @@ export function LargeText({ spacer, letterSpacing, textFull, textSlim }: LargeTe
   return (
     <div className={styles.textLargeContainer}>
       {spacer ? <div className={styles.textLargeSpacer}></div> : ""}
-      <div className={`${styles.textLarge} ${letterSpacing ? "" : styles.textLargeNoSpacing} ${styles.textLargeFull}`}>{escapeString(textFull)}</div>
-      <div className={`${styles.textLarge} ${letterSpacing ? "" : styles.textLargeNoSpacing} ${styles.textLargeSlim}`}>{escapeString(textSlim)}</div>
+      <h1 className={`${styles.textLarge} ${letterSpacing ? "" : styles.textLargeNoSpacing} ${styles.textLargeFull}`}>{escapeString(textFull)}</h1>
+      <h1 className={`${styles.textLarge} ${letterSpacing ? "" : styles.textLargeNoSpacing} ${styles.textLargeSlim}`}>{escapeString(textSlim)}</h1>
     </div>
   );
 }
