@@ -202,14 +202,22 @@ export function getContent(page: string): Content[] {
           data: { value: "Work Experience", fragmentID: "work-experience", first: true }
         },
         {
-          type: "photoGroup",
-          data: { photos: [{ src: `${config.basePath}/assets/images/work-experience.jpg`, alt: "The text Work Experience on a bulletin board background." }] }
-        },
-        {
           type: "text",
           data: {
             value:
               "I’ve worked several jobs ranging from fast food and retail to IT and software. I’ve compiled my accomplishments below, including some insight into my work and the difference I’ve made within each company."
+          }
+        },
+        {
+          type: "photoGroup",
+          data: {
+            photos: [
+              {
+                src: `${config.basePath}/assets/images/computer.jpg`,
+                alt: "A top-down view of a laptop sitting on a desk with a notebook and potted plant to the right. A man holds a cup of coffee on the left."
+              }
+            ],
+            small: true
           }
         },
         {
@@ -256,7 +264,7 @@ export function getContent(page: string): Content[] {
         },
         {
           type: "photoGroup",
-          data: { photos: [{ src: `${config.basePath}/assets/images/terraform.png`, alt: "A white Terraform logo on a dark background, with the text Terraform underneath the logo." }] }
+          data: { photos: [{ src: `${config.basePath}/assets/images/terraform.png`, alt: "A white Terraform logo on a dark background, with the text Terraform underneath the logo." }], small: true }
         },
         {
           type: "text",
@@ -295,7 +303,7 @@ export function getContent(page: string): Content[] {
         },
         {
           type: "photoGroup",
-          data: { photos: [{ src: `${config.basePath}/assets/images/atwell.jpg`, alt: "The logo for Atwell LLC, followed by the text Atwell." }] }
+          data: { photos: [{ src: `${config.basePath}/assets/images/atwell.jpg`, alt: "The logo for Atwell LLC, followed by the text Atwell." }], small: true }
         },
         {
           type: "text",
@@ -316,43 +324,81 @@ export function getContent(page: string): Content[] {
       return [
         {
           type: "header",
-          data: { value: "Header Example", fragmentID: "header-example", first: true }
+          data: { value: "Personal Projects", fragmentID: "personal-projects", first: true }
         },
         {
           type: "text",
           data: {
             value:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros sem, faucibus et suscipit ac, egestas non mauris. Suspendisse sed blandit augue. Fusce quis ante non turpis porttitor sodales sed id justo. Mauris tincidunt tincidunt dolor sit amet convallis. Sed urna enim, scelerisque vel est non, congue maximus magna. Suspendisse convallis libero at dui rhoncus aliquam. Duis turpis est, blandit vitae eros at, facilisis sagittis mauris. Maecenas ullamcorper mattis venenatis.\n\nProin eu augue vel odio ullamcorper euismod. Praesent eget suscipit augue. Nam leo leo, suscipit sed vehicula quis, gravida sit amet dolor. Sed bibendum, mauris non aliquam consequat, neque ante sollicitudin purus, sed placerat nisl lorem quis metus. Praesent scelerisque risus vitae fermentum dapibus. Integer at libero at est porta blandit ac eu nisl. Cras finibus dolor lectus. Donec at odio dui. Proin tincidunt metus a lectus porttitor, in hendrerit erat sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hendrerit malesuada aliquet. Donec porttitor quis augue eget pellentesque.\n\nQuisque luctus molestie ex, at euismod diam mattis eu. Morbi porta ornare nisi eget molestie. Donec lorem felis, tempor sed consectetur id, maximus eget neque. Ut a lorem eu ipsum molestie sollicitudin a in purus. Nam ultricies, nibh ac porttitor congue, dolor nibh ornare sem, sit amet accumsan nisl lorem varius nunc. Nullam placerat nibh ut risus sagittis mollis. Pellentesque aliquam augue et nisi faucibus blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit erat nunc, a pretium justo ornare non. Nunc neque odio, tristique sed lacus nec, ultrices eleifend enim. Morbi ultrices lacus quis velit convallis, ut semper magna tempus. Nullam vehicula, augue a interdum imperdiet, tortor lorem blandit nisl, in tincidunt mi augue maximus ex. Morbi faucibus, risus volutpat fermentum aliquam, nisi massa dapibus eros, quis tristique tellus erat tincidunt erat. Sed rutrum rutrum mauris, at fermentum tellus porttitor tincidunt. Vestibulum commodo, nunc in fringilla vestibulum, nisl ex suscipit lacus, ut lobortis augue lectus sit amet arcu. Vivamus quis arcu magna.\n\nPellentesque interdum vehicula pulvinar. Aliquam vitae interdum ex. Donec mattis ut lacus ac efficitur. Aliquam erat volutpat. Sed sit amet vestibulum nisl. Curabitur id lectus in quam suscipit dignissim fermentum vitae leo. Quisque tincidunt ligula dui, nec ornare ligula commodo quis.\n\nSed bibendum orci ac est placerat iaculis. In hac habitasse platea dictumst. Etiam convallis dolor sapien, vitae porta magna pharetra sed. Donec lobortis ipsum at euismod semper. Vivamus in tellus sapien. Nunc vel mi finibus, viverra sem vitae, pharetra purus. Sed sit amet tincidunt dui, sit amet semper tellus. Vestibulum tincidunt pretium magna, vel pellentesque nisi aliquam vel. Sed ligula mauris, imperdiet at neque condimentum, pellentesque tempor lacus."
+              "One of my favorite hobbies is working on personal projects outside school and work. While many of these projects never see the light of day, I’m quite proud of the ones that do. Many of these projects come about because I am interested in a subject or have a specific problem with an application I regularly use. Another common theme across many of these projects is that, as I mention on the About page, I love to automate everything I can."
           }
         },
         {
-          type: "header",
-          data: { value: "Realtime Blog Editor", fragmentID: "realtime-blog-editor" }
-        },
-        {
           type: "text",
-          data: { value: "Text" }
-        },
-        {
-          type: "bullet",
-          data: { bullets: ["Bullet 1", "Bullet 2", "Bullet 3", "Bullet 4", "Bullet 5"] }
-        },
-        {
-          type: "photoGroup",
-          data: { photos: [{ src: "https://live.staticflickr.com/65535/52880173539_631b5d4184_n.jpg", alt: "AI Beach Kitty :)" }] }
+          data: {
+            value: "The following sections cover some of my favorite and most notable personal projects."
+          }
         },
         {
           type: "spacer",
           data: {}
+        },
+        {
+          type: "header",
+          data: { value: "From-Scratch Multilayer Perceptron", fragmentID: "from-scratch-multilayer-perceptron" }
+        },
+        {
+          type: "text",
+          data: { value: "May 2024 – Aug 2024" }
+        },
+        {
+          type: "text",
+          data: {
+            value:
+              "Since I would be working on the AI/ML team during my GEICO internship, I decided it would be fun to build my own multilayer perceptron (MLP) to become more familiar with machine learning models. I developed a general machine learning framework from scratch in JavaScript, without using any libraries."
+          }
+        },
+        {
+          type: "text",
+          data: {
+            value:
+              "My implementation was very successful; I was able to achieve a 99.84% accuracy on the MNIST dataset (which tests a network’s ability to recognize hand-written digits) with just a single 500-node hidden layer."
+          }
+        },
+        {
+          type: "spacer",
+          data: {}
+        },
+        {
+          type: "header",
+          data: { value: "Trello Colors Extension", fragmentID: "trello-colors-extension" }
+        },
+        {
+          type: "text",
+          data: { value: "Aug 2020 – Present" }
         },
         {
           type: "photoGroup",
           data: {
             photos: [
-              { src: "https://live.staticflickr.com/65535/52880173539_631b5d4184_n.jpg", alt: "AI Beach Kitty :)" },
-              { src: "https://live.staticflickr.com/65535/52880173539_631b5d4184_n.jpg", alt: "AI Beach Kitty :)" },
-              { src: "https://live.staticflickr.com/65535/52880173539_631b5d4184_n.jpg", alt: "AI Beach Kitty :)" }
-            ]
+              { src: `${config.basePath}/assets/images/trello-colors-1.png`, alt: "The Trello label editor, showing a label titled Example with the hex color #6F0E27." },
+              { src: `${config.basePath}/assets/images/trello-colors-2.png`, alt: "The burgandy Example label displayed on a card titled Sample Card." }
+            ],
+            small: true
+          }
+        },
+        {
+          type: "text",
+          data: {
+            value:
+              "Trello, now owned by Atlassin, is a digital list-making tool that helps to organize and prioritize tasks. I’ve personally used Trello since high school to keep track of upcoming classes, shifts, assignments, and deadlines. Trello is excellent in many ways; however, for a long time, labels were limited to just 10 select colors. Even today, Trello still only lets users select from 30 predefined colors. This is fairly limiting, especially considering other similar tools provide users with a color picker, allowing for practically unlimited color options."
+          }
+        },
+        {
+          type: "text",
+          data: {
+            value:
+              "I took this limitation as a challenge, and wrote my own browser extension to solve it. Trello Colors allows users to enter a hex code before any label name to give it a custom color. Since releasing the extension in 2020, I’ve released over 20 updates on GitHub in response to Trello updates and user feedback. The repository currently has 24 stars."
           }
         },
         {
@@ -360,25 +406,72 @@ export function getContent(page: string): Content[] {
           data: {}
         },
         {
-          type: "photoHeader",
-          data: { value: "Photo Header 123", fragmentID: "realtime-blog-editor-1", photo: { src: "https://live.staticflickr.com/65535/52880173539_631b5d4184_n.jpg", alt: "AI Beach Kitty :)" } }
+          type: "header",
+          data: { value: "Minecraft-to-Discord Link Bot", fragmentID: "minecraft-to-discord-link-bot" }
         },
         {
           type: "text",
           data: {
-            value:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros sem, faucibus et suscipit ac, egestas non mauris. Suspendisse sed blandit augue. Fusce quis ante non turpis porttitor sodales sed id justo. Mauris tincidunt tincidunt dolor sit amet convallis. Sed urna enim, scelerisque vel est non, congue maximus magna. Suspendisse convallis libero at dui rhoncus aliquam. Duis turpis est, blandit vitae eros at, facilisis sagittis mauris. Maecenas ullamcorper mattis venenatis.\n\nProin eu augue vel odio ullamcorper euismod. Praesent eget suscipit augue. Nam leo leo, suscipit sed vehicula quis, gravida sit amet dolor. Sed bibendum, mauris non aliquam consequat, neque ante sollicitudin purus, sed placerat nisl lorem quis metus. Praesent scelerisque risus vitae fermentum dapibus. Integer at libero at est porta blandit ac eu nisl. Cras finibus dolor lectus. Donec at odio dui. Proin tincidunt metus a lectus porttitor, in hendrerit erat sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hendrerit malesuada aliquet. Donec porttitor quis augue eget pellentesque.\n\nQuisque luctus molestie ex, at euismod diam mattis eu. Morbi porta ornare nisi eget molestie. Donec lorem felis, tempor sed consectetur id, maximus eget neque. Ut a lorem eu ipsum molestie sollicitudin a in purus. Nam ultricies, nibh ac porttitor congue, dolor nibh ornare sem, sit amet accumsan nisl lorem varius nunc. Nullam placerat nibh ut risus sagittis mollis. Pellentesque aliquam augue et nisi faucibus blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit erat nunc, a pretium justo ornare non. Nunc neque odio, tristique sed lacus nec, ultrices eleifend enim. Morbi ultrices lacus quis velit convallis, ut semper magna tempus. Nullam vehicula, augue a interdum imperdiet, tortor lorem blandit nisl, in tincidunt mi augue maximus ex. Morbi faucibus, risus volutpat fermentum aliquam, nisi massa dapibus eros, quis tristique tellus erat tincidunt erat. Sed rutrum rutrum mauris, at fermentum tellus porttitor tincidunt. Vestibulum commodo, nunc in fringilla vestibulum, nisl ex suscipit lacus, ut lobortis augue lectus sit amet arcu. Vivamus quis arcu magna.\n\nPellentesque interdum vehicula pulvinar. Aliquam vitae interdum ex. Donec mattis ut lacus ac efficitur. Aliquam erat volutpat. Sed sit amet vestibulum nisl. Curabitur id lectus in quam suscipit dignissim fermentum vitae leo. Quisque tincidunt ligula dui, nec ornare ligula commodo quis.\n\nSed bibendum orci ac est placerat iaculis. In hac habitasse platea dictumst. Etiam convallis dolor sapien, vitae porta magna pharetra sed. Donec lobortis ipsum at euismod semper. Vivamus in tellus sapien. Nunc vel mi finibus, viverra sem vitae, pharetra purus. Sed sit amet tincidunt dui, sit amet semper tellus. Vestibulum tincidunt pretium magna, vel pellentesque nisi aliquam vel. Sed ligula mauris, imperdiet at neque condimentum, pellentesque tempor lacus."
+            value: "Aug 2023 – Dec 2023"
           }
         },
         {
-          type: "header",
-          data: { value: "Day Zero", fragmentID: "day-zero" }
+          type: "photoGroup",
+          data: {
+            photos: [
+              { src: `${config.basePath}/assets/images/discord-bot-1.jpg`, alt: "A Discord chat, with chats from Minecraft being displayed in a Minecraft font." },
+              { src: `${config.basePath}/assets/images/discord-bot-2.jpg`, alt: "A list of commands supported by the Discord bot, which instruct the bot to perform actions." }
+            ]
+          }
         },
         {
           type: "text",
           data: {
             value:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros sem, faucibus et suscipit ac, egestas non mauris. Suspendisse sed blandit augue. Fusce quis ante non turpis porttitor sodales sed id justo. Mauris tincidunt tincidunt dolor sit amet convallis. Sed urna enim, scelerisque vel est non, congue maximus magna. Suspendisse convallis libero at dui rhoncus aliquam. Duis turpis est, blandit vitae eros at, facilisis sagittis mauris. Maecenas ullamcorper mattis venenatis.\n\nProin eu augue vel odio ullamcorper euismod. Praesent eget suscipit augue. Nam leo leo, suscipit sed vehicula quis, gravida sit amet dolor. Sed bibendum, mauris non aliquam consequat, neque ante sollicitudin purus, sed placerat nisl lorem quis metus. Praesent scelerisque risus vitae fermentum dapibus. Integer at libero at est porta blandit ac eu nisl. Cras finibus dolor lectus. Donec at odio dui. Proin tincidunt metus a lectus porttitor, in hendrerit erat sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hendrerit malesuada aliquet. Donec porttitor quis augue eget pellentesque.\n\nQuisque luctus molestie ex, at euismod diam mattis eu. Morbi porta ornare nisi eget molestie. Donec lorem felis, tempor sed consectetur id, maximus eget neque. Ut a lorem eu ipsum molestie sollicitudin a in purus. Nam ultricies, nibh ac porttitor congue, dolor nibh ornare sem, sit amet accumsan nisl lorem varius nunc. Nullam placerat nibh ut risus sagittis mollis. Pellentesque aliquam augue et nisi faucibus blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit erat nunc, a pretium justo ornare non. Nunc neque odio, tristique sed lacus nec, ultrices eleifend enim. Morbi ultrices lacus quis velit convallis, ut semper magna tempus. Nullam vehicula, augue a interdum imperdiet, tortor lorem blandit nisl, in tincidunt mi augue maximus ex. Morbi faucibus, risus volutpat fermentum aliquam, nisi massa dapibus eros, quis tristique tellus erat tincidunt erat. Sed rutrum rutrum mauris, at fermentum tellus porttitor tincidunt. Vestibulum commodo, nunc in fringilla vestibulum, nisl ex suscipit lacus, ut lobortis augue lectus sit amet arcu. Vivamus quis arcu magna.\n\nPellentesque interdum vehicula pulvinar. Aliquam vitae interdum ex. Donec mattis ut lacus ac efficitur. Aliquam erat volutpat. Sed sit amet vestibulum nisl. Curabitur id lectus in quam suscipit dignissim fermentum vitae leo. Quisque tincidunt ligula dui, nec ornare ligula commodo quis.\n\nSed bibendum orci ac est placerat iaculis. In hac habitasse platea dictumst. Etiam convallis dolor sapien, vitae porta magna pharetra sed. Donec lobortis ipsum at euismod semper. Vivamus in tellus sapien. Nunc vel mi finibus, viverra sem vitae, pharetra purus. Sed sit amet tincidunt dui, sit amet semper tellus. Vestibulum tincidunt pretium magna, vel pellentesque nisi aliquam vel. Sed ligula mauris, imperdiet at neque condimentum, pellentesque tempor lacus."
+              "For some time, I helped a Discord server with bot development. One bot I made enabled the remote control of a Minecraft client via the Discord server itself, through server commands. On the Discord side, JavaScript was used to handle commands. These commands were forwarded over MongoDB to the Minecraft side, which was written as a Minecraft Forge mod using Java."
+          }
+        },
+        {
+          type: "text",
+          data: {
+            value:
+              "This bot mostly served to connect the Minecraft game chat with the Discord chat, but it also enabled several other features (such as querying online players, allowing server staff to remotely mute or ban users in-game, etc.)."
+          }
+        },
+        {
+          type: "spacer",
+          data: {}
+        },
+        {
+          type: "header",
+          data: { value: "Collaborative Blog Post Editor", fragmentID: "collaborative-blog-post-editor" }
+        },
+        {
+          type: "text",
+          data: { value: "Jan 2022 – Aug 2022" }
+        },
+        {
+          type: "photoGroup",
+          data: {
+            photos: [
+              { src: `${config.basePath}/assets/images/academies-home.png`, alt: "The editor home page, displaying two example posts on the right side." },
+              { src: `${config.basePath}/assets/images/academies-editor.png`, alt: "The editor itself, displaing a Google Docs-like editor." },
+              { src: `${config.basePath}/assets/images/academies-settings.png`, alt: "The editor settings page, including information about the article and the users with access to it." }
+            ]
+          }
+        },
+        {
+          type: "text",
+          data: {
+            value:
+              "In my senior year of high school, my principal approached me and asked if I could develop a website for him. I took this opportunity to build a fully-fledged blog post editor, complete with Google Docs-style collaborative editing and a powerful suite of admin tools and customization features."
+          }
+        },
+        {
+          type: "text",
+          data: {
+            value:
+              "To keep the website scalable and cost-effective, I used Firebase as a serverless backend for storage and real-time syncing. I also integrated OAuth 2.0 with Google Sign-In for easy user authentication and connected the app to the Google Drive API, allowing users to host images at low cost using the storage on their existing Google accounts."
           }
         }
       ];
@@ -486,20 +579,24 @@ export function getSectionGroups(page: string): SectionGroup[] {
           name: "Contents",
           sections: [
             {
-              name: "Header Example",
-              fragmentID: "header-example"
+              name: "Personal Projects",
+              fragmentID: "personal-projects"
             },
             {
-              name: "Cool Thing",
-              fragmentID: "realtime-blog-editor"
+              name: "From-Scratch MLP",
+              fragmentID: "from-scratch-multilayer-perceptron"
             },
             {
-              name: "Project Hello",
-              fragmentID: "realtime-blog-editor-1"
+              name: "Trello Colors",
+              fragmentID: "trello-colors-extension"
             },
             {
-              name: "Day Zero",
-              fragmentID: "day-zero"
+              name: "MC-Discord Bot",
+              fragmentID: "minecraft-to-discord-link-bot"
+            },
+            {
+              name: "Blog Post Editor",
+              fragmentID: "collaborative-blog-post-editor"
             }
           ]
         },
@@ -509,6 +606,14 @@ export function getSectionGroups(page: string): SectionGroup[] {
             {
               name: "GitHub",
               href: "https://github.com/branbarh"
+            },
+            {
+              name: "Trello Colors",
+              href: "https://github.com/branbarh/Trello-Colors-Extension"
+            },
+            {
+              name: "MC-Discord Bot",
+              href: "https://github.com/branbarh/zbot-mc"
             }
           ]
         }

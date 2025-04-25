@@ -182,9 +182,9 @@ function PanePhotoHeader({ value, fragmentID, first, photo }: PhotoHeaderData) {
   );
 }
 
-function PanePhotoGroup({ photos }: PhotoGroupData) {
+function PanePhotoGroup({ photos, small }: PhotoGroupData) {
   return (
-    <div className={styles.panePhotoGroup}>
+    <div className={`${styles.panePhotoGroup} ${small ? styles.panePhotoGroupSmall : ""}`}>
       {photos.map((photo, i) => {
         return (
           <div
