@@ -214,7 +214,7 @@ export function getContent(page: string): Content[] {
             photos: [
               {
                 src: `${config.basePath}/assets/images/computer.jpg`,
-                alt: "A top-down view of a laptop sitting on a desk with a notebook and potted plant to the right. A man holds a cup of coffee on the left."
+                alt: "A top-down view of a laptop on a desk surrounded by a notebook and pen, potted plant, and coffee."
               }
             ],
             small: true
