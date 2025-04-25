@@ -479,33 +479,149 @@ export function getContent(page: string): Content[] {
       return [
         {
           type: "header",
-          data: { value: "Header Example", fragmentID: "header-example", first: true }
-        },
-        {
-          type: "photoGroup",
-          data: {
-            photos: [
-              { src: "https://live.staticflickr.com/65535/52880173539_631b5d4184_n.jpg", alt: "AI Beach Kitty :)" },
-              { src: "https://live.staticflickr.com/65535/52880173539_631b5d4184_n.jpg", alt: "AI Beach Kitty :)" },
-              { src: "https://live.staticflickr.com/65535/52880173539_631b5d4184_n.jpg", alt: "AI Beach Kitty :)" }
-            ]
-          }
+          data: { value: "Skills", fragmentID: "skills", first: true }
         },
         {
           type: "text",
-          data: { value: "Text" }
+          data: {
+            value:
+              "Throughout my education, work experience, and personal projects, I’ve worked with a multitude of different programming languages, libraries, frameworks, backends, tools, operating systems, applications, and more. I’ve compiled these skills into the lists that follow."
+          }
         },
         {
-          type: "bullet",
-          data: { bullets: ["Bullet 1", "Bullet 2", "Bullet 3", "Bullet 4", "Bullet 5"] }
+          type: "photoGroup",
+          data: { photos: [{ src: `${config.basePath}/assets/images/code.png`, alt: "Rectangles of several different colors, organized such that they imitate blocks of code." }] }
         },
         {
           type: "spacer",
           data: {}
         },
         {
-          type: "photoHeader",
-          data: { value: "Photo Header 123", fragmentID: "realtime-blog-editor-1", photo: { src: "https://live.staticflickr.com/65535/52880173539_631b5d4184_n.jpg", alt: "AI Beach Kitty :)" } }
+          type: "header",
+          data: { value: "Programming Languages", fragmentID: "programming-languages" }
+        },
+        {
+          type: "text",
+          data: {
+            value:
+              "I’ve worked with quite a few different programming languages over the years, ranging from purely mathematical languages (e.g., MATLAB), to esoteric languages, to scripting languages, and everything in between. I’ve listed each of these below, in order from most knowledge to least."
+          }
+        },
+        {
+          type: "bullet",
+          data: {
+            bullets: [
+              "JavaScript/TypeScript/Node.js",
+              "HTML5/CSS3",
+              "Python",
+              "C++",
+              "C",
+              "Java",
+              "Terraform",
+              "Bash/Shell/Powershell Script",
+              "Lua",
+              "Julia",
+              "R",
+              "MATLAB",
+              "AutoHotkey",
+              "BrainF***",
+              "ARM64 Assembly"
+            ]
+          }
+        },
+        {
+          type: "spacer",
+          data: {}
+        },
+        {
+          type: "header",
+          data: { value: "Frameworks and Libraries", fragmentID: "frameworks-and-libraries" }
+        },
+        {
+          type: "text",
+          data: {
+            value:
+              "Below is a brief list of the major frameworks and libraries I’ve worked with over the years, including some less-major libraries I particularly enjoy. These frameworks and libraries are grouped based on the programming language they’re implemented and used in, although in no specific order."
+          }
+        },
+        {
+          type: "bullet",
+          data: {
+            bullets: [
+              "Electron",
+              "Next.js",
+              "React",
+              "Vue",
+              "Express.js",
+              "JQuery",
+              "Bootstrap",
+              "Three.js",
+              "OpenGL",
+              "Discord.js",
+              "p5.js",
+              "Robot.js",
+              "Express",
+              "Tesseract",
+              "Axios",
+              "ChatMC",
+              "Firebase (JS)",
+              "MongoDB (JS and Java)",
+              "MinecraftForge",
+              "Processing 3/4",
+              "Pillow",
+              "PyTorch",
+              "Matplotlib",
+              "NumPy"
+            ]
+          }
+        },
+        {
+          type: "spacer",
+          data: {}
+        },
+        {
+          type: "header",
+          data: { value: "Operating Systems and Applications", fragmentID: "operating-systems-and-applications" }
+        },
+        {
+          type: "text",
+          data: { value: "Over the years, I’ve worked with practically every operating system, including (but not limited to):" }
+        },
+        {
+          type: "bullet",
+          data: { bullets: ["Windows (from XP to 11)", "MacOS", "iOS/Android", "WSL, Ubuntu, and other Linux distros (e.g., for the Raspberry Pi)", "ChromeOS"] }
+        },
+        {
+          type: "text",
+          data: { value: "I’ve also worked with several different development platforms and applications, including (but again, not limited to):" }
+        },
+        {
+          type: "bullet",
+          data: {
+            bullets: [
+              "Git",
+              "GitHub/GitLab",
+              "Chrome Extensions (Manifest V2/3)",
+              "Tampermonkey",
+              "Cloudflare",
+              "Firebase",
+              "MongoDB",
+              "Docker",
+              "Heroku",
+              "AWS",
+              "VS Code",
+              "Atom (RIP)",
+              "Figma",
+              "Postman/Insomnia"
+            ]
+          }
+        },
+        {
+          type: "text",
+          data: {
+            value:
+              "I’m particularly fond of Insomnia (a REST API testing tool), since I’ve actually contributed to the source code! You can view my contributions under the “Insomnia” section of the sidebar to the left."
+          }
         }
       ];
   }
@@ -624,20 +740,20 @@ export function getSectionGroups(page: string): SectionGroup[] {
           name: "Contents",
           sections: [
             {
-              name: "Header Example",
-              fragmentID: "header-example"
+              name: "Skills",
+              fragmentID: "skills"
             },
             {
-              name: "Cool Thing",
-              fragmentID: "realtime-blog-editor"
+              name: "Languages",
+              fragmentID: "programming-languages"
             },
             {
-              name: "Project Hello",
-              fragmentID: "realtime-blog-editor-1"
+              name: "Libraries",
+              fragmentID: "frameworks-and-libraries"
             },
             {
-              name: "Day Zero",
-              fragmentID: "day-zero"
+              name: "Platforms",
+              fragmentID: "operating-systems-and-applications"
             }
           ]
         },
@@ -647,6 +763,23 @@ export function getSectionGroups(page: string): SectionGroup[] {
             {
               name: "GitHub",
               href: "https://github.com/branbarh"
+            }
+          ]
+        },
+        {
+          name: "Insomnia Contributions",
+          sections: [
+            {
+              name: "PR #7279",
+              href: "https://github.com/Kong/insomnia/pull/7279"
+            },
+            {
+              name: "PR #7280",
+              href: "https://github.com/Kong/insomnia/pull/7280"
+            },
+            {
+              name: "Issue #7039",
+              href: "https://github.com/Kong/insomnia/issues/7039#issuecomment-2048703994"
             }
           ]
         }
